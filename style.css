@@ -1,0 +1,323 @@
+@font-face {
+	font-family: "Inconsolata";
+	src: url("./assets/fonts/Inconsolata-VariableFont.ttf");
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Inconsolata";
+    color: white;
+}
+
+.conference-container {
+	background-image: url("./assets/images/background-desktop.png");
+	height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 2rem 0rem 8rem 0rem;
+    position: relative;
+}
+
+.pattern-squiggly-line-bottom {
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+}
+
+.pattern-squiggly-line-top{
+    position: absolute;
+    right: 0;
+    max-width: 100%;
+}
+
+.pattern-lines {
+    position: absolute;
+    top: 0;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+}
+
+.pattern-circle {
+    position: absolute;
+    top: 24rem;
+    right: 15.5rem;
+    max-width: 100%;
+}
+
+.form-context-container {
+    margin-bottom: 2rem;
+}
+
+.form-title-container {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    justify-content: center;
+    font-weight: bolder;
+    gap: 1em;
+    margin-bottom: 3rem;
+}
+
+.icon {
+    height: 1em;
+}
+
+.page-container {
+    max-width: 40em;
+    width: 100%;
+}
+
+.journey {
+    font-size: 2.7em;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.msg {
+    color: hsl(252, 6%, 83%);
+    font-size: 1.1em;
+    text-align: center;
+}
+
+
+.form-container {
+    display: grid;
+    justify-content: center;
+    z-index: 1;
+}
+
+.generate-ticket {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    outline: none;
+    border: 1px solid rgba(256, 256, 256, 50%);
+    background: transparent;
+    font-size: 0.8em;
+    border-radius: 5px;
+    padding: 0.8em;
+    color: white;
+}
+
+.generate-ticket-btn {
+    outline: none;
+    border-color: transparent;
+    background: linear-gradient(45deg, hsl(7, 88%, 67%), hsl(7, 71%, 60%));
+    color: hsl(248, 70%, 10%);
+    font-weight: bolder;
+    padding: 0.6em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.drag-drop {
+	border: 1px dashed hsl(252, 6%, 83%);
+    display: grid;
+    width: 14em;
+    gap: 1em;
+    padding: 1em 4em;
+    justify-items: center;
+    border-radius: 10px;
+    color: hsl(252, 6%, 83%);
+    background: rgb(255 255 255 / 10%);
+    align-content: space-between;
+    cursor: pointer;
+}
+
+.drag-drop span {
+    font-size: 0.85em;
+}
+
+.upload-icon {
+	padding: 0.3em;
+    background: rgb(255 255 255 / 10%);
+    border-radius: 10px;
+    border: 1px solid rgb(255 255 255 / 20%);
+}
+
+.upload-info-container {
+    margin: 0.5rem 0rem 1.5rem 0rem;
+}
+
+.upload-info-container, .error {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.info-icon ,.upload-info-container img {
+    height: 0.9em;
+}
+
+.upload-info, .error-title {
+    font-size: 0.6em;
+}
+
+.profile{
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    border: 2px solid hsl(252, 6%, 83%);
+}
+
+.drag-btn-container{
+
+}
+
+.drag-btn{
+	background: rgb(255 255 255 / 10%);
+    border: 0;
+    color: hsl(252, 6%, 83%);
+    padding: 0.5em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info-icon {
+  filter: invert(24%) sepia(100%) saturate(7495%) hue-rotate(357deg) brightness(95%) contrast(120%);
+}
+.error {
+    color: red;
+    margin: 0.2rem 0rem 0.5rem 0rem; 
+}
+
+.form-label {
+    margin-bottom: 0.8em;
+}
+
+/* Ticket */
+.congrats-container {
+    font-size: 2.8em;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.congrats-name {
+    background: linear-gradient(45deg, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.congrats-details {
+    padding: 0rem 9rem;
+    text-align: center;
+    line-height: 1.3rem;
+    color: hsl(252, 6%, 83%);
+    margin-bottom: 4rem;
+}
+
+.congrats-email {
+    color: hsl(7, 88%, 67%);
+}
+
+.ticket {
+    display: flex;
+    position: relative;
+    width: fit-content;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background: linear-gradient(hsla(248, 70%, 10%, 0.8), hsla(248, 70%, 10%, 0.8)) padding-box, linear-gradient(90deg, hsla(0, 0%, 100%, 0.7), hsl(7, 86%, 67%, 0.7)) border-box;
+    margin: 0 auto;
+}
+
+.title-info-container {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.ticket-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.ticket-icon {
+    height: 1.7rem;
+}
+
+.ticket-date {
+    color: hsl(252, 6%, 83%);
+    font-size: 0.8rem;
+    word-spacing: 0.2rem;
+}
+
+.ticket-details-container {
+    display: grid;
+    gap: 0.7rem;
+}
+
+.ticket-person-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.person-avatar {
+    height: 4rem;
+    border-radius: 10px;
+}
+
+.ticket-left {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1rem 6rem 1rem 1rem;
+}
+
+.person-name {
+    font-size: 1.3rem;
+}
+
+.person-github-container {
+    display: flex;
+    align-items: center;
+}
+
+.preson-github {
+    color: hsl(252, 6%, 83%);
+}
+
+.ticket-top {
+    position: absolute;
+    width: 3rem;
+    height: 1.5rem;
+    background-color: hsl(248, 70%, 10%);
+    border-radius: 0px 0px 25px 25px;
+    top: -2px;
+    right: 2.5rem;
+}
+
+.ticket-bottom {
+    position: absolute;
+    width: 3rem;
+    height: 1.5rem;
+    background-color: hsl(248, 70%, 10%);
+    border-radius: 25px 25px 0px 0px;
+    bottom: -2px;
+    right: 2.5rem;
+}
+
+.ticket-right {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    border-left: 1px dashed hsl(245, 15%, 58%);
+}
+
+.ticket-number {
+    transform: rotate(90deg);
+    height: min-content;
+    color: hsl(245, 15%, 58%);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
